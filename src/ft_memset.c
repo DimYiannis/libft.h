@@ -2,7 +2,8 @@
 
 void *ft_memset(void *b, int c, size_t len)
 {
-    unsigned char *temp = (unsigned char *)b;
+    unsigned char *temp = (unsigned char *)b; // (unsigned char *) is a type of pointer, s1 is still a pointer no deref happened
+  
     
     size_t n=0;
 
