@@ -25,5 +25,30 @@ AUTHORIZED EXTERNAL FUNCTIONS
 
 char *ft_substr(const char *s, unsigned int start, size_t len)
 {
-    
+    int n = ft_strlen(s);
+    if (start > n)
+    {
+        return NULL;
+    }
+
+    if (start + len > n)
+    {
+        len = n - start;
+    }
+
+    unsigned char *substring;
+    substring = malloc((len + 1) * sizeof(char));
+    if (substring == NULL)
+    {
+        return substring;
+    }
+
+    for (size_t i = 0; i < len; i++)
+    {
+        substring[i] = s[start + i];
+    }
+
+    substring[len] = '\0';
+
+    return substring;
 }
