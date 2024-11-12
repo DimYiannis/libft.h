@@ -47,5 +47,5 @@ char *ft_strjoin(const char *s1, const char *s2)
     return string;
 }
 
-//wanted to exercise pointer arithmetic in the 2ond loop.
+//wanted to exercise pointer arithmetic in the 2nd loop.
 // normally would use array indexing
