@@ -10,3 +10,17 @@ int ft_strcmp(const char *s1, const char *s2)
     }
     return (unsigned char)s1[i] - (unsigned char)s2[i];
 }
+
+/*
+using pointer arithmetic in order to include null pointers
+int ft_strcmp(const char *s1, const char *s2)
+{
+    while (*s1 && *s1 == *s2)
+        {
+            s1++;
+            s2++;
+        }
+    return ((unsigned char)*s1 - (usnigned char*s2));
+}
+
+*/
